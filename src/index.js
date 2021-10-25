@@ -1,13 +1,28 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom'; 
+
 import './index.css';
+
 import App from './App';
+import userRepos from './pages/repos'
+import { Route, BrowserRouter as Router, Redirect ,Switch } from 'react-router-dom';
+
+
 import reportWebVitals from './reportWebVitals';
 
+const routing = (
+  <Router>
+    <div>
+      <Switch>
+        <Route exact path="/" component={App}/>
+        <Route path="/user" component={userRepos}/>
+      </Switch>
+    </div>
+  </Router>
+)
+
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  routing,
   document.getElementById('root')
 );
 

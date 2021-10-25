@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    text-align: center;
+}
+
+.input{
+    width: 20vw;
+}
+
+thead {
+    background-color: black;
+    color: white;
+}
+.th {
+    padding-right: 20px;
+}
+
+tr:nth-child(2n) {
+    background-color: #dddddd;
+  }
+
+tr {
+    border-bottom: 1px solid #ddd;
+  }
+
